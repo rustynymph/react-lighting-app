@@ -1,0 +1,101 @@
+
+ol, ul {
+  padding-left: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  color: #222;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  font-weight: 200;
+  margin: 0 20px;
+}
+.react-draggable, .cursor {
+  cursor: move;
+}
+.no-cursor {
+  cursor: auto;
+}
+.cursor-y {
+  cursor: ns-resize;
+}
+.cursor-x {
+  cursor: ew-resize;
+}
+.react-draggable strong {
+  background: #ddd;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 3px 5px;
+  text-align: center;
+}
+.box {
+  border-radius: 0px;
+  width: 120px;
+  height: 120px;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+
+.workspace {
+  height: 1000px;
+  width: 80%;
+  position: 'relative';
+  float: left;
+  overflow: 'none';
+  padding: 0px;
+  background: #000000;
+  z-index: -1;
+}
+
+.scene-creator {
+  border: 1px solid #999;
+  background: #222222;
+  display: block;
+  float: right;
+  width: 20%;
+  height: 1000px;
+  color: #ffffff;
+}
+
+.light-label {
+  color: #aaaaaa;
+}
+
+.node-left, .node-right{
+  fill: #cccccc;
+  stroke-width: 2px;
+  stroke: #000000;
+}
+
+.node-left:hover, .node-right:hover {
+  fill: #aaaaaa;
+  stroke: #ffffff;
+  opacity: 1;
+}
+
+.light {
+  stroke-width: 2px;
+  stroke: #555555;
+  z-index: 1;
+}
+
+.light:hover {
+  stroke: #ffffff;
+  opacity: 1;
+}
+
+.wire {
+  stroke-width: 2px;
+  stroke: #aa00aa;
+  position: absolute;
+  pointer-events: none;
+}
